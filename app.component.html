@@ -1,0 +1,57 @@
+<ion-app>
+  <ng-template #sideMenuTemplate>
+    <div class="io">
+      <!-- <div class="imageProfile">
+        <app-ca-complex-list-item [(listItemOpt)]="caItemOptprofile" (click)="selectImage()">
+        </app-ca-complex-list-item>
+      </div> -->
+      <div>
+        <ion-list>
+          <div
+            *ngFor="let image of this.images; index as i"
+            class="paddingItem mysidemenu"
+          >
+            <span>{{ this.update(image, i) }}</span>
+            <app-ca-complex-list-item
+              [(listItemOpt)]="caItemOpt"
+              (click)="navigateTo(i)"
+            ></app-ca-complex-list-item>
+          </div>
+        </ion-list>
+      </div>
+      <div class="main-footer">
+        <div class="child-left">
+          <app-ca-switcher-language></app-ca-switcher-language>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <ion-menu
+    *ngIf="platform.isRTL"
+    contentId="main"
+    side="start"
+    id="Lmenu"
+    menu-id="Lmenu"
+    class="io mymenu"
+    [swipeGesture]="false"
+    (ionWillOpen)="opendone()"
+  >
+    <ng-container *ngTemplateOutlet="sideMenuTemplate"></ng-container>
+  </ion-menu>
+
+  <ion-menu
+    *ngIf="!platform.isRTL"
+    contentId="main"
+    side="start"
+    id="Rmenu"
+    menu-id="Rmenu"
+    class="io mymenu"
+    [swipeGesture]="false"
+    (ionWillOpen)="opendone()"
+  >
+    <ng-container *ngTemplateOutlet="sideMenuTemplate"></ng-container>
+  </ion-menu>
+
+  <ion-router-outlet id="main"> </ion-router-outlet>
+</ion-app>

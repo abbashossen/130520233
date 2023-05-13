@@ -1,0 +1,26 @@
+.content {
+    /////card od the content centered
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25% !important;
+    margin-top: 60px;
+    width: 83% !important;
+    height: 480px !important;
+    transform: translate(-50%, -50%);
+    background: white;
+  }
+  
+  .field {
+    height: 45px;
+    width: 300px;
+  }
+  
+  .bg-img {
+    background: white !important;
+  }
+  

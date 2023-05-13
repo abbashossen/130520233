@@ -1,0 +1,95 @@
+.fullCal {
+    padding-top: 10px;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+.listOne {
+    width: 100%;
+    height: 100px;
+}
+
+.scroll-content {
+    padding-bottom: 0 !important;
+}
+
+.buttonBottom {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    align-self: flex-end !important;
+    justify-self: flex-end !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.fullC {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.padi {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.content {
+    /////card od the content centered
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25% !important;
+    margin-top: 60px;
+    width: 83% !important;
+    height: 480px !important;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+.field {
+    height: 45px;
+    width: 300px;
+}
+
+.bg-img {
+    background: white !important;
+}
+
+.label{
+    color: black;
+    border-color: black;
+}
+
+.divTwo {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    scroll-behavior: scroll;
+
+    display: flex !important;
+    flex-direction: column !important;
+    padding-top: 30px;
+}
+
+.driverDetails {
+    display: flex !important;
+    flex-direction: row !important;
+
+    width: 100%;
+    height: 20px;
+    z-index: 1000;
+}

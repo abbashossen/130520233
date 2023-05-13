@@ -1,0 +1,7 @@
+<app-template-list #listHolder 
+(scroll)="fetchAllDrivers($event)"
+  [(optionList)]="listoption" 
+  (clickEvent)="clickIcons($event)"
+  (clickIcon)="confirmKill($event)"
+  >
+</app-template-list>

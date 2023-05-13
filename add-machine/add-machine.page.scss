@@ -1,0 +1,23 @@
+.content {
+  /////card od the content centered
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+  height: 100% !important;
+  background: white;
+}
+
+.field {
+  height: 45px;
+  width: 300px;
+}
+
+.field2 {
+  margin-top: 6px !important;
+}
+
+.bg-img {
+  background: white !important;
+}

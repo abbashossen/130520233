@@ -1,0 +1,34 @@
+<app-template-form>
+  <div class="content">
+    <div class="field fieldpr reg">
+      <app-ca-input [(opt)]="this.optInputPlateNumber"></app-ca-input>
+    </div>
+    <div class="field fieldpr reg">
+      <app-ca-input [(opt)]="this.optInputModel"></app-ca-input>
+    </div>
+    <div class="field fieldpr reg">
+    <app-ca-toggle
+      (toggleChange)="reverseRented($event)"
+      [(option)]="toggleOption"
+    ></app-ca-toggle>
+    </div>
+    <div class="field fieldpr reg" *ngIf="isRented">
+      <app-ca-dynamic-dropdown [(option)]="dropDownOptionType"
+                              (selectDone)="changeAmount($event)"></app-ca-dynamic-dropdown>
+    </div>
+    <div class="field fieldpr reg" *ngIf="isRented">
+      <app-ca-input [(opt)]="this.optInputAmount"></app-ca-input>
+    </div>
+    <div class="field fieldpr reg" *ngIf="isRented">
+      <app-ca-dynamic-dropdown
+        [(option)]="dropDownOption"
+      ></app-ca-dynamic-dropdown>
+    </div>
+   
+    <div class="field2 reg">
+      <app-ca-button-submit
+        [options]="this.caSubmitOptions"
+      ></app-ca-button-submit>
+    </div>
+  </div>
+</app-template-form>

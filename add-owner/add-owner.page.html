@@ -1,0 +1,27 @@
+<app-template-form>
+  <div class="content">
+    <form [formGroup]="formGroupRegister">
+      <div class="field fieldpr reg">
+        <app-ca-input [(opt)]="this.optName" > </app-ca-input>
+      </div>
+      <div class="field fieldpr reg">
+        <app-ca-input-ar-name [(opt)]="this.optArbName"> </app-ca-input-ar-name>
+      </div>
+        <div class="field fieldpr">
+          <app-ca-input-telephone [parentFormGroup]="formGroupRegister" 
+          [(opt)]="this.optmobile" 
+          [checkbefore]="false">
+          </app-ca-input-telephone>
+        </div>
+      
+  
+      
+        <div class="field fieldpr cen reg"></div>
+        <!-- <div class="field reg"> -->
+          <div class="field2 reg">
+            <app-ca-button-submit [options]="this.caSubmitOptions"></app-ca-button-submit>
+          </div>
+        <!-- </div> -->
+    </form>
+  </div>
+</app-template-form>

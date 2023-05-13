@@ -1,0 +1,8 @@
+<app-template-list 
+#listHolder 
+(scroll)="fetchAllDrivers(selectedDate,$event)"
+  [(optionList)]="listoption" 
+  (change)="reserveoOnTime($event)" 
+  (clickEvent)="clickIcons($event)"
+  (clickIcon)="confirmKill($event)">
+</app-template-list>

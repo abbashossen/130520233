@@ -1,0 +1,69 @@
+<app-template-form 
+[optionForm]="this.optionForm"
+
+>
+  <div class="content">
+    <!-- <form [formGroup]="formGroupRegister"> -->
+    <!-- <div class="field fieldpr reg"></div> -->
+    <div class="field fieldpr reg">
+      <app-ca-dynamic-dropdown [(option)]="dropDownOptionMachine"></app-ca-dynamic-dropdown>
+    </div>
+    <!-- <div class="field fieldpr reg"></div> -->
+    <div class="field fieldpr nopadding">
+      <app-ca-dynamic-dropdown [(option)]="dropDownOptionDriver"></app-ca-dynamic-dropdown>
+    </div>
+    <div class="field fieldpr reg">
+      <app-ca-complex-date-input [(opt)]="caInputOptionsDate"></app-ca-complex-date-input>
+    </div>
+    <div class="field fieldpr reg">
+      <app-ca-complex-time-input 
+      
+      [(opt)]="this.inpStartHour" ></app-ca-complex-time-input>
+    </div>
+    <div class="field fieldpr reg">
+      <app-ca-complex-time-input 
+      
+      [(opt)]="this.inpEndHour"></app-ca-complex-time-input>
+    </div>
+    <div class="field fieldpr reg">
+      <app-ca-input [(opt)]="this.optStartKm"></app-ca-input>
+    </div>
+    <app-ca-list-item-image [(options)]="listImageOptionsStartKm"></app-ca-list-item-image>
+  <div class="field fieldpr reg">
+    <app-ca-input [(opt)]="this.optEndKm"></app-ca-input>
+  </div>
+  <app-ca-list-item-image [(options)]="listImageOptionsEndKm"></app-ca-list-item-image>
+<app-ca-label [(label)]="this.label" *ngIf="isOptimal" class="blackLabel"></app-ca-label>
+<app-ca-label [(label)]="this.label" *ngIf="!isOptimal" class="errorMessage"></app-ca-label>
+  <div class="field fieldpr reg">
+    <app-ca-input [(opt)]="this.optIncome"></app-ca-input>
+  </div>
+    
+    <div class="field fieldpr reg">
+      <app-ca-input [(opt)]="this.optFuel"></app-ca-input>
+    </div>
+       
+    <app-ca-list-item-image
+    
+    
+    [(options)]="listImageOptionsFuel"></app-ca-list-item-image>
+
+    <div class="field fieldpr reg">
+      <app-ca-input [(opt)]="this.optDesc"></app-ca-input>
+    </div>
+    
+        
+   <div class="field2 reg">
+      <app-ca-button-submit
+        [options]="this.caSubmitOptions"
+      ></app-ca-button-submit>
+    </div>
+    <!-- </form> -->
+  </div>
+</app-template-form>
+
+<div class="divTwo">
+  <div *ngIf="totalCost" class="driverDetails">
+    <app-ca-label [label]="totalCost" class="blackLabel"></app-ca-label>
+    
+  </div>

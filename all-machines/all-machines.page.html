@@ -1,0 +1,7 @@
+<app-template-list
+  #listHolder
+  (scroll)="fetchAllMachines()"
+  [(optionList)]="listoption"
+  (clickIcon)="confirmSwitching($event)"
+>
+</app-template-list>

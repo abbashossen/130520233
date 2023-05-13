@@ -1,0 +1,126 @@
+.paddingItem {
+  padding: 0.5px;
+}
+
+.imageProfile {
+  background: var(--ion-color-background) !important;
+  padding: 2px;
+  height: 165px !important;
+  padding-top: 2px;
+}
+
+ion-list {
+  background: var(--ion-color-background) !important;
+}
+
+.menuList {
+  background: var(--ion-color-background) !important;
+  height: 70%;
+}
+
+.header {
+  width: 100% !important;
+  height: 10% !important;
+  border: 2px solid red;
+  z-index: 1000 !important;
+}
+
+ion-toolbar {
+  --background: red !important;
+}
+ion-header {
+  z-index: 1000 !important;
+}
+
+.c {
+  --background: var(--ion-color-background) !important;
+}
+
+.child-left                              ////class for language switcher
+{
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.io {
+  height: 100%;
+  --background: var(--ion-color-background) !important;
+}
+
+.mainbutton {
+  color: var(--ion-color-orange);
+  z-index: 1000;
+}
+
+.my-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 20;
+  top: 0;
+  left: 0;
+}
+
+.divLabel {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.example-box {
+  width: 200px;
+  height: 200px;
+  border: solid 1px #ccc;
+  color: rgba(0, 0, 0, 0.87);
+  // cursor: move;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 4px;
+}
+
+#balancediv {
+  width: 30px;
+  height: 30px;
+  background: var(--ion-color-submit) !important;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 99em;
+}
+
+@media (max-height: 780px) {
+  /* smartphones, Android phones, landscape iPhone */
+  .imageProfile {
+    padding: 2px;
+    height: 150px !important;
+    padding-top: 1px;
+  }
+}
+
+@media (max-height: 585px) {
+  /* smartphones, Android phones, landscape iPhone */
+  .main-footer {
+    display: none;
+  }
+}
+
+.leftBottom {
+  animation: goesUp 3s ease-in-out forwards;
+}
+
+@keyframes goesUp {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
